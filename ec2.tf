@@ -24,7 +24,7 @@ module "catalogue" {
   }
 
   output "inst_id" {
-    value = module.catalogue.instance_id
+    value = module.catalogue.id
   }
 
 
