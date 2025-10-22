@@ -1,3 +1,3 @@
 module "catalogue" {
-  source = "../modules/terraform-aws-instance"
+  source = "../terraform-aws-instance"
 }
