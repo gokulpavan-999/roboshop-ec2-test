@@ -16,15 +16,15 @@ module "catalogue" {
 }
 
   output "pub_ip" {
-    value = aws_instance.this.public_ip
+    value = module.catalogue.public_ip
   }
 
   output "priv_ip" {
     value = module.catalogue.private_ip
   }
 
-  output "inst_ip" {
-    value = module.catalogue.instance_ip
+  output "inst_id" {
+    value = module.catalogue.instance_id
   }
 
 
