@@ -1,3 +1,3 @@
 module "catalogue" {
-  source = "../terraform-aws-instance"
+  source = "git::https://github.com/gokulpavan-999/terraform-aws-instance.git"
 }
