@@ -15,4 +15,5 @@ module "catalogue" {
 
   output "pub-ip" {
     value = module.catalogue.public_ip
+  }
 }
