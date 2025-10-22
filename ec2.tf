@@ -16,7 +16,7 @@ module "catalogue" {
 }
 
   output "pub_ip" {
-    value = module.catalogue.public_ip
+    value = aws_instance.this.public_ip
   }
 
   output "priv_ip" {
