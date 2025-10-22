@@ -3,4 +3,7 @@ module "catalogue" {
   ami_id = "ami-09c813fb71547fc4f"
   sg_ids = ["sg-072023e212f530c25"]
   instance_type = "t3.micro"
+  tags = {
+    Name = "module-demo"
+  }
 }
