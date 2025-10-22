@@ -12,4 +12,7 @@ module "catalogue" {
   sg_ids = var.sg_ids
   instance_type = var.instance_type
   tags = var.tags
+
+  output "pub-ip" {
+    value = module.catalogue.public_ip
 }
