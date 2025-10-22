@@ -6,6 +6,7 @@ module "catalogue" {
   #tags = {
     #Name = "module-demo"
   #}
+}
 
   source = "git::https://github.com/gokulpavan-999/terraform-aws-instance.git"
   ami_id = var.ami_id
@@ -25,4 +26,4 @@ module "catalogue" {
     value = module.catalogue.instance_ip
   }
 
-}
+
