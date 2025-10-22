@@ -13,7 +13,16 @@ module "catalogue" {
   instance_type = var.instance_type
   tags = var.tags
 
-  output "pub-ip" {
+  output "public-ip" {
     value = module.catalogue.public_ip
   }
+
+  output "private-ip" {
+    value = module.catalogue.private_ip
+  }
+
+  output "instance-ip" {
+    value = module.catalogue.instance_ip
+  }
+
 }
